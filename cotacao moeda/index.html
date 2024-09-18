@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação Moedas</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/device.css" media="only screen and (min-width: 500px)">
+</head>
+<body>
+    <header>
+        <p>1 Dolár Americano Hoje</p>
+        <p id="cotacao_agora">0,00 Reais</p>
+    </header>
+    <main>
+        <div>
+            <select>
+                <option value="1">
+                    USD
+                </option>
+            </select>
+            <hr>
+            <input type="number" onblur="ajustarReal()" id="usd" step="0.01">
+        </div>
+        <div>
+            <select>
+                <option value="1">
+                    BRL
+                </option>
+            </select>
+            <hr>
+            <input type="number" onblur="ajustarDolar()" id="brl" step="0.01">        
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Criado por <a href="https://github.com/0Fernando0" target="_blank">0Fernando0</a></p>
+    </footer>
+    <script src="service.js"></script>
+</body>
+</html>

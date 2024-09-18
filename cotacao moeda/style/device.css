@@ -1,0 +1,10 @@
+body header p {
+  margin: 10px 0px;
+}
+body main {
+  flex-direction: row;
+}
+body main div {
+  flex-basis: 150px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=device.css.map */
